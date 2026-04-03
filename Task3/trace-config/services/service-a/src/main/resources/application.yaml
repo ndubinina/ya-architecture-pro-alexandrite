@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: service-a
+
+server.port: 8081
+
+webclient:
+  config:
+    url: http://localhost:8080
+
+otel:
+  propagators: tracecontext,baggage
+  service.name: service-b
